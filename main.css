@@ -68,6 +68,55 @@ body {
     text-shadow: 15px 15px #FF6C6C;
   }
 }
+
+@media (max-width:1080px) and (orientation: landscape){
+  .header-inner {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .logo {
+    padding-left: 5%;
+    padding-top: 2%;
+    letter-spacing: 0.25rem;
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .logo-link {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    z-index: 1000;
+  }
+  .nav-list {
+      margin: 3%
+  }
+  .nav-item {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.7px;
+    font-weight: 450;
+    font-size: large;
+  }
+  .mobile-greeting {
+    position: absolute;
+    bottom: 60vh;
+    padding-top: 8%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-size: 85px;
+    font-weight: 350;
+    text-shadow: 15px 15px #FF6C6C;
+    z-index: -1;
+  }
+}
 @media (min-width:1081px) and (max-width:4000px){
   .header-inner {
     padding-top: 15px;
