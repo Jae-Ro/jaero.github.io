@@ -12,12 +12,11 @@ body {
     background-position-y: bottom;
     background-position-x: center;
     background-size:100%;
-    height: 100vh;
+    height: 65vh;
     background-color: #fadcdc;
     z-index: 0;
   }
 }
-
 @media (min-width:751px) and (max-width:4000px){
   .banner-bg {
     background-position: bottom left;
@@ -25,43 +24,76 @@ body {
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
-    background-size: 100%;
-    height: 100vh;
+    background-size: 90%;
+    height: 90vh;
     background-color: #fadcdc;
     z-index: 0;
   }
 }
 
 /* Header */
-.header-inner {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  vertical-align: center;
-  align-items: center;
-  z-index: 1000;
+@media (max-width:750px){
+  .header-inner {
+    bottom: 70vh;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+  }
+  .logo {
+    width: 100%;
+    letter-spacing: 0.45rem;
+    font-weight:500;
+    text-transform: lowercase;
+    font-size: 3.5em;
+    
+  }
+  .logo-link {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    z-index: 1000;
+  }
+  .nav-list {
+    display: none;
+  }
 }
-.logo {
-  margin-left:3.5%;
-  letter-spacing: 0.45rem;
-  display: flex;
-  font-size: 25px;
-}
-.logo-link {
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  z-index: 1000;
-}
-.nav-list {
-    margin: 3%
-}
-.nav-item {
-  padding: 0 20px;
-  text-decoration: none;
-  color: black;
-  letter-spacing: 1.7px;
-  font-weight: 450;
+@media (min-width:751px) and (max-width:4000px){
+  .header-inner {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .logo {
+    margin: 0 0 0 4%;
+    letter-spacing: 0.45rem;
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .logo-link {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    z-index: 1000;
+  }
+  .nav-list {
+      margin: 3%
+  }
+  .nav-item {
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.7px;
+    font-weight: 450;
+    font-size: large;
+  }
 }
 
 
@@ -78,8 +110,9 @@ body {
   width: 100%;
   position: absolute;
   font-size: 10px;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   vertical-align: center;
   text-align: center;
   z-index: 100;
