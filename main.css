@@ -34,7 +34,7 @@ body {
 /* Header */
 @media (max-width:750px){
   .header-inner {
-    bottom: 70vh;
+    bottom: 68vh;
     position: absolute;
     width: 100%;
     display: flex;
