@@ -1,8 +1,16 @@
 /* Handling All Fonts */
 body {
+  margin:0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
+/* Banner */
+.banner-bg {
+  height: 100vh;
+  background-color: #fadcdc;
+  /* background-color: white; */
+  position: relative;
+  z-index: 0;
+}
 /* Header */
 .header-inner {
   width: 100%;
@@ -35,14 +43,6 @@ body {
   font-weight: 450;
 }
 
-/* Banner */
-.banner-bg {
-  height: 100vh;
-  background-color: #fadcdc;
-  /* background-color: white; */
-  position: relative;
-  z-index: 0;
-}
 /* Shapes */
 
 /* .shape-1 {
@@ -61,11 +61,14 @@ body {
 /* Couch Thoughts */
 .couch {
   z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .couch-img {
   position: absolute;
   bottom: 0;
-  max-width: 100%;
+  max-width: 90%;
   text-align: center;
 }
 
