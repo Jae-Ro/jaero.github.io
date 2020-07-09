@@ -7,33 +7,21 @@ body {
 @media (max-width: 750px){
   .banner-bg {
     background-position: bottom left;
-    background-image: url("Couch Thoughts.png");
+    background-image: url("Couch React.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
     background-size:100%;
-    height: 70vh;
+    height: 100vh;
     background-color: #fadcdc;
     z-index: 0;
   }
 }
-@media (min-width:751px) and (max-width:1440px){
+
+@media (min-width:751px) and (max-width:4000px){
   .banner-bg {
     background-position: bottom left;
-    background-image: url("Couch Thoughts.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
-    background-size:100%;
-    height: 90vh;
-    background-color: #fadcdc;
-    z-index: 0;
-  }
-}
-@media (min-width:1441px) and (max-width:4000px){
-  .banner-bg {
-    background-position: bottom left;
-    background-image: url("Couch Thoughts.png");
+    background-image: url("Couch React.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
@@ -76,64 +64,23 @@ body {
   font-weight: 450;
 }
 
-/* Technology Logos */
-@media (max-width: 750px){ 
-  .technologies {
-    padding: 15% 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (min-width:751px) and (max-width:1440px){
-  .technologies {
-    padding: 8% 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
- }
- @media (min-width:1441px) and (max-width:4000px){
-  .technologies {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
- }
-/* Logo Images */
- @media (max-width: 750px){ 
-  .technologies img {
-    margin-left: 4%;
-    margin-right: 4%;
-    max-width: 15%;
-  }
- }
- @media (min-width:751px) and (max-width:1440px){ 
-  .technologies img {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
- }
- @media (min-width:1441px) and (max-width:4000px){ 
-  .technologies img {
-    margin-left: 4%;
-    margin-right: 4%;
-    max-width: 15%;
-  }
- }
 
 /* Footer */
 .footer {
   align-items: center;
   width: 100%;
   justify-content: center;
+  z-index: 1;
 }
 .footer-copyright {
+  color: white;
   bottom: 0;
   width: 100%;
   position: absolute;
   font-size: 10px;
-  margin: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   vertical-align: center;
-  text-align: center
+  text-align: center;
+  z-index: 100;
 }
