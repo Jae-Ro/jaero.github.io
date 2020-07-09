@@ -4,11 +4,29 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 /* Banner */
-.banner-bg {
-  height: 100vh;
-  background-color: #fadcdc;
-  z-index: 0;
+@media (max-width: 750px){
+  .banner-bg {
+    height: 50vh;
+    background-color: #fadcdc;
+    z-index: 0;
+  }
 }
+@media (min-width:751px) and (max-width:1440px){
+  .banner-bg {
+    height: 75vh;
+    background-color: #fadcdc;
+    z-index: 0;
+  }
+}
+@media (min-width:1441px) and (max-width:4000px){
+  .banner-bg {
+    height: 100vh;
+    background-color: #fadcdc;
+    z-index: 0;
+  }
+}
+
+
 /* Header */
 .header-inner {
   width: 100%;
@@ -41,20 +59,49 @@ body {
   font-weight: 450;
 }
 
-/* Shapes */
-
-/* .shape-1 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
+/* Technology Logos */
+@media (max-width: 750px){ 
+  .technologies {
+    padding: 8% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.circle {
-  width: 500px;
-  height: 500px;
-  background: red;
-  border-radius: 50%;
-  z-index: -10;
-} */
+@media (min-width:751px) and (max-width:1440px){
+  .technologies {
+    padding: 5% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+ @media (min-width:1441px) and (max-width:4000px){
+  .technologies {
+    padding: 1% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+
+ @media (max-width: 750px){ 
+  .technologies img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    max-width: 15%;
+  }
+ }
+ @media (min-width:751px) and (max-width:4000px){ 
+  .technologies img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+ }
 
 /* Couch Thoughts */
 .couch {
@@ -62,13 +109,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width:100%;
 }
-.couch-img {
-  position: absolute;
-  bottom: 0;
-  max-width: 90%;
-  text-align: center;
+@media (max-width: 750px){ 
+  .couch-img {
+    position: absolute;
+    bottom: 50%;
+    max-width: 90%;
+    text-align: center;
+  }
 }
+@media (min-width:751px) and (max-width:1440px){
+  .couch-img {
+    position: absolute;
+    bottom: 25%;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+@media (min-width:1441px) and (max-width:4000px){
+  .couch-img {
+    position: absolute;
+    bottom: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+
 
 /* Footer */
 footer {
