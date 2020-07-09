@@ -7,8 +7,6 @@ body {
 .banner-bg {
   height: 100vh;
   background-color: #fadcdc;
-  /* background-color: white; */
-  position: relative;
   z-index: 0;
 }
 /* Header */
